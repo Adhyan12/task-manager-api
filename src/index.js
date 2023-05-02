@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log("Server listening at port...", port);
 });
-exports.app = functions.https.onRequest(app);
+
 
 const Task = require("./models/task");
 const User = require("./models/user");
